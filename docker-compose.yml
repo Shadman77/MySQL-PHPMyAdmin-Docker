@@ -30,6 +30,9 @@ services:
     environment:
       PMA_HOST: db
       MYSQL_ROOT_PASSWORD: root
+      UPLOAD_LIMIT: 512M  # Increase file upload limit
+      MEMORY_LIMIT: 1024M  # Increase PHP memory limit
+      MAX_EXECUTION_TIME: 600  # Increase script execution time
     networks:
       - app-network
 
