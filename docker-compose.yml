@@ -16,7 +16,7 @@ services:
       SERVICE_NAME: mysql
       TZ: Asia/Dhaka
     volumes:
-      - ./dbdata:/var/lib/mysql
+      - dbdata:/var/lib/mysql
     networks:
       - app-network
 
